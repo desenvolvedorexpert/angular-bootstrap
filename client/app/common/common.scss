@@ -107,3 +107,9 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: $theme-dark;
 }
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
