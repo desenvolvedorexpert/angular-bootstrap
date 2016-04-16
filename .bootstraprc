@@ -44,7 +44,7 @@ preBootstrapCustomizations: client/app/common/_variables.scss
 # Import your custom styles here
 # Usually this endpoint-file contains list of @imports of your application styles
 #
-appStyles: client/app/common/_bootswatch.scss
+# appStyles: client/app/common/_bootswatch.scss
 
 
 ### Bootstrap styles

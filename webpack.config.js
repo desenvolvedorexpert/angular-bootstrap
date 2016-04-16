@@ -8,12 +8,9 @@ module.exports = {
   module: {
     loaders: [
        { test: /bootstrap-sass\/assets\/javascripts\//, loader: 'imports?jQuery=jquery' },
-       { test: /\.js$/, exclude: [/app\/lib/, /node_modules/], loader: 'ng-annotate!babel' },
-       { test: /\.(png)$/, loader: 'url-loader?limit=100000' },
-       { test: /\.woff(2)?(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=application/font-woff' },
-       { test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=application/octet-stream' },
-       { test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: 'file' },
-       { test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=image/svg+xml' },
+       { test: /\.(js|jsx)$/, exclude: [/app\/lib/, /node_modules/], loader: 'ng-annotate!babel' },
+       { test: /\.(png|jpg|gif|svg|woff|woff2)$/, loader: 'url?limit=100000' },
+       { test: /\.(eot|ttf|wav|mp3)$/, loader: 'file' },
        { test: /\.html$/, loader: 'raw' },
        { test: /\.scss$/, loader: 'style!css!sass' },
        { test: /\.css$/, loader: 'style!css' }
