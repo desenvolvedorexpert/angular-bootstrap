@@ -9,8 +9,9 @@ module.exports = {
     loaders: [
        { test: /bootstrap-sass\/assets\/javascripts\//, loader: 'imports?jQuery=jquery' },
        { test: /\.(js|jsx)$/, exclude: [/app\/lib/, /node_modules/], loader: 'ng-annotate!babel' },
-       { test: /\.(png|jpg|gif|svg|woff|woff2)$/, loader: 'url?limit=100000' },
-       { test: /\.(eot|ttf|wav|mp3)$/, loader: 'file' },
+       { test: /\.(png|jpg|gif)$/, loader: 'url?limit=100000' },
+       { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: 'url?limit=10000&minetype=application/font-woff' }, // font-awesome
+       { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: 'file' }, // font-awesome
        { test: /\.html$/, loader: 'raw' },
        { test: /\.scss$/, loader: 'style!css!sass' },
        { test: /\.css$/, loader: 'style!css' }

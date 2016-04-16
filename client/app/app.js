@@ -7,6 +7,7 @@ import Components from './components/components';
 import AppComponent from './app.component';
 import angulartics from 'angulartics';
 import angularticsGoogle from 'angulartics-google-analytics';
+import 'font-awesome-loader';
 
 angular.module('app', [
     uiRouter,
